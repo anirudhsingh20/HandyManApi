@@ -60,6 +60,6 @@ app.use((error, req, res, next) => {
 })
 
 mongoose.connect(
-    'mongodb+srv://anirudh:anirudh12@cluster0-qrafd.mongodb.net/messages?retryWrites=true&w=majority'
+    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_USER}@cluster0-qrafd.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`
 )
-app.listen(8080)    
+app.listen(process.env.PORT || 8080)    
