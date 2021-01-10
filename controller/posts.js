@@ -37,7 +37,7 @@ exports.createPost = (req, res, next) => {
 
     }
     else {
-        const imageUrl = `http://localhost:8080/images/${Image.filename}`
+        const imageUrl = `https://handy-man-api.herokuapp.com/images/${Image.filename}`
         let post = new Post({
             description: description,
             hasImage: hasImage,

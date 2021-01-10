@@ -62,7 +62,7 @@ exports.createAd = (req, res, next) => {
     const creator = req.body.creator
     console.log(creator);
 
-    const imageUrl = `http://localhost:8080/images/${image.filename}`
+    const imageUrl = `https://handy-man-api.herokuapp.com/images/${image.filename}`
     console.log(image.path);
     const ad = new Ad({
         description: description,
