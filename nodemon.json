@@ -2,7 +2,8 @@
     "env": {
         "MONGO_USER" : "anirudh",
         "MONGO_PASSWORD" : "anirudh12",
-        "MONGO_DEFAULT_DATABASE": "messages"
+        "MONGO_DEFAULT_DATABASE": "messages",
+        "PORT":"8080"
     }
 
 }
