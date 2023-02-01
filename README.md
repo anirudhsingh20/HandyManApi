@@ -16,32 +16,47 @@ Retrieves a list of all posts related to home maintenance and repair tasks.
 
 A JSON object with the following properties:
 
+-   `message`: Response message
 -   `posts`: An array of posts, where each post is an object with the following properties:
-    -   `id`: The ID of the post
-    -   `title`: The title of the post
+    -   `_id`: unique ID of the post
     -   `description`: A brief description of the post
-    -   `created_at`: The date and time the post was created
+    -   `image`: image url
+    -   `hasImage`: check for image
 
   ---
 
 `curl https://handy-man-api.onrender.com/post/get-posts`
 
     {
-      "posts": [
-        {
-          "id": 1,
-          "title": "How to fix a leaky faucet",
-          "description": "A step-by-step guide to fixing a leaky faucet",
-          "created_at": "2022-01-01T12:00:00Z"
-        },
-        {
-          "id": 2,
-          "title": "How to paint a room",
-          "description": "A comprehensive guide to painting a room",
-          "created_at": "2022-01-02T12:00:00Z"
-        }
-      ]
+  "message": "post fetched",
+  "posts": [
+    {
+      "_id": "63da0ca6aeab164cd71fe849",
+      "description": "Hey this is my test application. Welcome to this amazing platform",
+      "hasImage": true,
+      "image": "http://localhost:8080/images/2023-02-01T06-54-30.082Z-63da0c1faeab164cd71fe848.png",
+      "creator": {
+        "_id": "63da0c1faeab164cd71fe848",
+        "name": "Anirudh Singh",
+        "phoneNo": 7838495884,
+        "password": "$2a$12$nZ4o.fDOFtVlEJxhT1UMnuKlJw3EPcjjUsMNGg59S55t0acC.f5Sm",
+        "posts": [
+          
+        ],
+        "ads": [
+          
+        ],
+        "createdAt": "2023-02-01T06:52:15.685Z",
+        "updatedAt": "2023-02-01T06:52:15.685Z",
+        "__v": 0
+      },
+      "createdAt": "2023-02-01T06:54:30.115Z",
+      "updatedAt": "2023-02-01T06:58:32.089Z",
+      "__v": 0,
+      "likes": 1
     }
+  ]
+}
 
 ---
 ### About the Handy Man Application
