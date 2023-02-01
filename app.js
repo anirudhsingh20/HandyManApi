@@ -60,6 +60,8 @@ app.use((error, req, res, next) => {
 })
 
 mongoose.connect(
-    'mongodb+srv://anirudh:anirudh12@cluster0-qrafd.mongodb.net/messages?retryWrites=true&w=majority'
+    'mongodb+srv://anirudh:vOeVRoy9QSM6iLjs@cluster0-qrafd.mongodb.net/test',
 )
-app.listen(8080)    
+app.listen(8080);
+
+// mongodb+srv://anirudh:<password>@cluster0.qrafd.mongodb.net/test
