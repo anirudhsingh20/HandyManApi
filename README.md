@@ -1,6 +1,6 @@
 # Handy Man Api
 
-HandyMan API is a **RESTful API** built using the Express framework and JSON Web Tokens (JWT) for authentication that provides access to the Handy Man([https://github.com/anirudhsingh20/HandyMan](https://github.com/anirudhsingh20/HandyMan)) service .
+HandyMan API is a **RESTful API** built using the Express framework and JSON Web Tokens (JWT) for authentication that provides access to the Handy Man([https://github.com/anirudhsingh20/HandyMan](https://github.com/anirudhsingh20/HandyMan)) service . It is backed by a MongoDB database
 
 
 
